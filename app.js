@@ -185,7 +185,7 @@ app.post('/Itemdetails',(req,res) => {
 // connection with mongo
 MongoClient.connect(mongoUrl,(err,client)=>{
     if(err) console.log(`Error while connecting`);
-    db = client.db('Visionrays')
+    db = client.db('visionraysapi')
     app.listen(port,() => {
         console.log(`Listing to port ${port}`)
     })
